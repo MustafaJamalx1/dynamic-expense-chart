@@ -1,0 +1,151 @@
+:root {
+  --x-y: "still in development";
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: hsl(27, 66%, 92%);
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.my-balance {
+  color: hsl(33, 100%, 98%);
+  width: 30rem;
+  height: 8rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: hsl(10, 79%, 65%);
+  /* display: flex;
+  justify-content: space-between; */
+  position: relative;
+}
+.balance-p {
+  font-size: 1.2rem;
+  padding-bottom: rem;
+}
+.balance-num {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.logo-img {
+  height: 3.6rem;
+  position: absolute;
+  top: 50%;
+  right: 7%;
+  transform: translate(0, -50%);
+}
+.chart-card {
+  background-color: hsl(33, 100%, 98%);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+.chart-header {
+  font-size: 1.8rem;
+  padding-bottom: 2rem;
+}
+.chart {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: flex-end;
+  width: 100%;
+  min-height: 14rem;
+  padding-bottom: 2rem;
+  border-bottom: 2px solid hsl(27, 66%, 92%);
+}
+.amounts {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  list-style: none;
+}
+.amounts * {
+  width: 3rem;
+  /* height: var(--amount-hight); */
+  border-radius: 0.4rem;
+  background-color: hsl(10, 79%, 65%);
+  color: red;
+  position: relative;
+}
+.amounts *:hover,
+.amounts *:active {
+  background-color: hsl(10, 79%, 75%);
+}
+.amounts *::before {
+  content: var(--x-y);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  width: 5rem;
+  height: 2.4rem;
+  color: hsl(33, 100%, 98%);
+  border-radius: 0.4rem;
+  background-color: hsl(25, 47%, 15%);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  display: none;
+  padding: 0.6rem;
+}
+.amounts *:hover::before,
+.amounts *:active::before {
+  display: flex;
+}
+.days {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.days * {
+  width: 3rem;
+  text-align: center;
+}
+.chart-p {
+  padding: 1rem 0 0 0;
+  font-size: 1rem;
+  color: hsl(28, 10%, 53%);
+}
+.price-and-interest-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: right;
+}
+.chart-spending {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: -0.1rem;
+  color: hsl(25, 47%, 15%);
+}
+.chart-interest {
+  color: hsl(25, 47%, 15%);
+  font-weight: 700;
+  padding-bottom: 0.1rem;
+}
+.chart-from {
+  font-size: 1rem;
+  color: hsl(28, 10%, 53%);
+}

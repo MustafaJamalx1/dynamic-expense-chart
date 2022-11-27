@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Expenses chart component</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="my-balance">
+        <div>
+          <p class="balance-p">My balance</p>
+          <p class="balance-num">$921.48</p>
+        </div>
+        <img class="logo-img" src="images/logo.svg" alt="company logo" />
+      </div>
+      <div class="chart-card">
+        <h1 class="chart-header">Spending - Last 7 days</h1>
+        <div class="chart">
+          <ul class="amounts"></ul>
+          <ul class="days"></ul>
+        </div>
+        <p class="chart-p">Total this month</p>
+        <div class="price-and-interest-container">
+          <p class="chart-spending">$478.33</p>
+          <div>
+            <p class="chart-interest">+2.4%</p>
+            <p class="chart-from">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- mon tue wed thu fri sat sun -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
